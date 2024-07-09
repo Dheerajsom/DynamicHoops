@@ -5,16 +5,27 @@ body {
     padding: 0;
 }
 
+.curry-image {
+    position: absolute;
+    top: 3px;
+    right: 370px;
+    width: 90px; 
+    height: auto;
+    border-radius: 50%; 
+    z-index: 1; /* Ensures the image appears above other elements */
+}
+
 .basketball-header {
     background-color: #e07721;
     color: white;
     padding: 1em;
     position: relative;
-    overflow: hidden; /* Ensure lines do not overflow */
+    overflow: hidden;
 }
 
 .basketball-header h1 {
     font-family: 'Bebas Neue', sans-serif;
+    margin-right: 20px;
 }
 
 .basketball-header nav ul {
@@ -32,8 +43,6 @@ body {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
-
-
 
 .lines-container {
     position: absolute;
