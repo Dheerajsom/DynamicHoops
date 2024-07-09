@@ -5,16 +5,6 @@ body {
     padding: 0;
 }
 
-.curry-image {
-    position: absolute;
-    top: 3px;
-    right: 370px;
-    width: 90px; 
-    height: auto;
-    border-radius: 50%; 
-    z-index: 1; /* Ensures the image appears above other elements */
-}
-
 .basketball-header {
     background-color: #e07721;
     color: white;
@@ -91,12 +81,33 @@ body {
 
 .signup.basketball-header {
     float: right;
+    padding-right: 0em;
   }
 
 .login.basketball-header{
     float: right;
+    padding-right: 0em;
 }
 
+.curry-image {
+    position: absolute;
+    top: 3px;
+    right: 620px;
+    width: 90px; 
+    height: auto;
+    border-radius: 50%; 
+    z-index: 1; /* Ensures the image appears above other elements */
+}
+
+.lebron-image{
+    position: absolute;
+    top: 3px;
+    right: 520px;
+    width: 90px; 
+    height: auto;
+    border-radius: 50%; 
+    z-index: 1; /* Ensures the image appears above other elements */
+}
 
 footer {
     background-color: #e07721;
