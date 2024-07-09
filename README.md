@@ -1,4 +1,4 @@
-# All Things NBA
+# Dynamic Hoops
 
 A website dedicated to providing news, stats, player profiles, and game schedules for NBA fans.
 
