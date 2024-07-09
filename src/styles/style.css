@@ -6,6 +6,7 @@ body {
 }
 
 .basketball-header {
+    position: relative;
     background-color: #e07721;
     color: white;
     padding: 1em;
@@ -82,26 +83,32 @@ body {
 .signup.basketball-header {
     float: right;
     padding-right: 0em;
+    z-index: 2;
   }
 
 .login.basketball-header{
     float: right;
     padding-right: 0em;
+    z-index: 2;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-width: 50vw;
-  }
+    width: auto\9; /* ie8 */
+}
 
 .curry-image {
     position: absolute;
     top: 3px;
     right: 620px;
     width: 90px; 
+    transform: translate(1%, 0%);
+    max-width: 100px; /* Maximum size */
+    min-width: 50px; /* Minimum size */
     height: auto;
     border-radius: 50%; 
+    margin-right: 0%;
     z-index: 1; /* Ensures the image appears above other elements */
 }
 
@@ -129,5 +136,26 @@ footer {
     .basketball-header nav ul li {
         display: block;
         margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .curry-image {
+        right: 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    .curry-image {
+        right: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .curry-image {
+        top: 70px; /* Fixed position from top on smaller screens */
+        right: 20px;
+        transform: none;
+        width: 60px; /* Fixed size on smaller screens */
     }
 }
